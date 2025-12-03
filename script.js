@@ -1,4 +1,3 @@
-// Minimal JavaScript for smooth scrolling
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -14,5 +13,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
         });
+    });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, observerOptions);
+
+    // Select elements to animate
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        section.classList.add('reveal-on-scroll');
+        observer.observe(section);
     });
 });
