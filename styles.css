@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 :root {
     --bg-color: #fafafa;           /* Slightly off-white for depth */
     --card-bg: #ffffff;            /* Pure white for cards */
@@ -320,7 +326,9 @@ footer {
 }
 
 .project-image {
-	flex: 0 0 200px; /* Fixed width for image */
+	width: 200px;
+    min-width: 200px;
+    max-width: 200px;
 	height: 160px;   /* Fixed height - maintains 5:4 ratio */
 	border-radius: 8px;
 	overflow: hidden;
