@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal academic page showcasing research, projects, and ongoing work">
-    <title>Your Name - Academic Personal Page</title>
+    <meta name="description" content="Rosh Ho Portfolio">
+    <title>Rosh Ho</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,17 +14,17 @@
             <div class="profile-container">
                 <div class="profile-image">
                     <!-- Replace with your own profile photo -->
-                    <img src="Images\Rosh-Ho.jpg" alt="Profile Photo">
+                    <img src="imgs\Rosh-Ho.jpg" alt="Profile Photo">
                 </div>
                 <div class="profile-info">
                     <h1>Rosh Ho</h1>
-                    <p class="title">PhD Student in Computer Science</p>
+                    <p class="title">Software Engineer/Roboticist</p>
                     <p class="affiliation">Columbia University</p>
                     <p class="bio">
-                        I am a PhD student working on machine learning and artificial intelligence. 
-                        My research focuses on developing efficient algorithms for real-world applications.
-
-						r.ho[at]columbia.edu
+                        I'm a recent graduate student working on artificial intelligence, embedded systems and HCI. 
+                        My current research focus is applying the latest works from academia onto assistive rehabilitative orthotics. </p>
+					<p class="contact-email">
+						Email: r.ho [at] columbia.edu
                     </p>
                     <div class="contact-links">
                         <!-- Update with your actual email -->
@@ -43,31 +43,125 @@
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="container">
-            <h2>Selected Projects</h2>
-            
-            <div class="project">
-                <h3>Data Visualization Platform</h3>
-                <p>
-                    Built an interactive web-based platform for visualizing complex scientific data. 
-                    Utilized modern frameworks to create intuitive and accessible visualizations.
-                </p>
-                <div class="project-links">
-                    <a href="#">demo</a> /
-                    <a href="#">code</a>
+            <h2>Projects</h2>
+			<!-- Pending insert paper & robotics class -->
+			<div class="project">
+                <div class="project-image">
+                    <img src="imgs\hand-brace-glove.jpg" alt="Variations of hardware braces for stroke rehab">
+                </div>
+                <div class="project-content">
+                    <h3> ReGlove: A Soft Pneumatic Glove for Activities of Daily Living Assistance via Wrist-Mounted Vision
+					</h3>
+					<p>
+						ReGlove is a low-cost vision-guided pneumatic glove that enables assistive orthoses using wrist-mounted cameras and edge computing, achieving 96.73% grasp accuracy and 82.71% success on object manipulation tasks—all for under $250 with commercial components.
+					</p>
+                    <div class="project-links">
+						<a href="pdf\reglove-IEEE.pdf">paper (in-review)</a> 
+                    </div>
                 </div>
             </div>
 
-            <div class="project">
-                <h3>Collaborative Research Tool</h3>
-                <p>
-                    Developed a collaborative platform enabling researchers to share data and insights 
-                    in real-time, facilitating better scientific collaboration across institutions.
-                </p>
-                <div class="project-links">
-                    <a href="#">website</a> /
-                    <a href="#">source</a>
+			<div class="project">
+				<div class="project-image">
+					<img src="imgs\grasp-example.jpeg" alt="Robotic hand hovering above object with grasp identified">
+				</div>
+				<div class="project-content">
+					<h3>Achieving Dexterous Manipulation via Computer Vision for Stroke Patients</h3>
+					<p>
+						Improves stroke rehabilitation by enabling prosthetic and exoskeleton hands to automatically select appropriate grasps using vision. Combines RGB images with depth maps to recognize five daily-use grasp types, with results showing depth cues compensate for limitations in muscle signals.
+					</p>
+					<div class="project-links">
+						<a href="pdf\grasp-mapping-CV.pdf">paper</a> /
+						<a href="github.com/roshho/Depth-Aware-Grasp-Classification">github</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="project">
+                <div class="project-image">
+                    <img src="imgs\robot-dog-schematics.png" alt="Robot dog schematics">
+                </div>
+                <div class="project-content">
+                    <h3> Designing & Building Quadruped Robotic Systems
+					</h3>
+					<p>
+						Built a quadruped robot from scratch, including mechanical design, electronics assembly, and software integration purely with laser-cutting to reduce build time and optimized for lightweight structure.
+					</p>
+                    <div class="project-links">
+						<a href="pdf\robotics-spot.pdf">slides</a> 
+                    </div>
                 </div>
             </div>
+
+			<div class="project">
+                <div class="project-image">
+                    <img src="imgs\Screenshot 2025-12-12 005014.png" alt="Image of data collection setup with depth camera headmounted and glove for data collection">
+                </div>
+                <div class="project-content">
+                    <h3> Sensor Array Development for Cross-Embodiment Pre-training
+					</h3>
+                    <p>
+						Developed a multi-modal sensor array for collecting human demonstration data, including RGB/depth cameras (Intel RealSense D435 and D405) mounted on the head and wrist, plus tactile sensing gloves. The ROS2-based system captures visual streams at 35Hz and converts depth data to point clouds for cross-embodiment pre-training.
+                    </p>
+                    <div class="project-links">
+						<a href="pdf\ROAM-lab-memo.pdf">memo</a> 
+                    </div>
+                </div>
+            </div>
+
+			<div class="project">
+                <div class="project-image">
+                    <img src="imgs\solar-installation.png" alt="Camera identifying insertion point of modular solar panel for insallation">
+                </div>
+                <div class="project-content">
+                    <h3> Lightweight Vision Model for Solar Pole Identification
+					</h3>
+                    <p>
+						Developed a lightweight computer vision pipeline using YOLO to detect solar installation pole tips from RGB images with high precision. The model demonstrates strong localization accuracy suitable for fast, on-device real-world applications.
+                    </p>
+                    <div class="project-links">
+						<a href="pdf\davis-mecha.pdf">slides</a> /
+                        <a href="https://github.com/roshho/solar-panel-pole-tip-detection">github</a>
+                    </div>
+                </div>
+            </div>
+
+			<div class="project">
+                <div class="project-image">
+                    <img src="imgs\library-capacity.png" alt="Library Capacity Website Case Study">
+                </div>
+                <div class="project-content">
+                    <h3> Real-Time Library Occupancy Management System
+					</h3>
+                    <p>
+						Built 'CULib Study Spot,' a real-time occupancy tracking app for Columbia University Libraries that helps students locate available study spaces efficiently. The platform features live seat availability, quiet zone indicators, and floor suggestions, while providing librarians with an independent tool for managing capacity data.
+                    </p>
+                    <div class="project-links">
+						<a href="pdf\CULib.pdf">slides</a> /
+						<a href="https://youtu.be/4l-oOLacSHw">demo vid</a> /
+                        <a href="https://github.com/roshho/CU-at-Lib">github</a>
+                    </div>
+                </div>
+            </div>
+
+			<div class="project">
+				<div class="project-image">
+                    <img src="imgs\man-sitting-on-coins.png" alt="Miniature man sitting on coins">
+                </div>
+                <div class="project-content">
+                    <h3>Political Marketing NLP Analysis</h3>
+                    <p>
+                        A Columbia Business School political marketing analysis project investigating how candidates signal bipartisanship and elite credentials supervised by Professor Mohamed Hussein. Features LLM-based tweet classification and campaign website scraping to understand impacts on voter perception. 
+                    </p>
+                    <div class="project-links">
+                        <a href="pdf\CBS\CBS-final-presentation.pdf">slides</a> /
+						<a href="pdf\CBS\CBS-memo.pdf">memo</a> /
+                        <a href="https://github.com/roshho/political-marketing-analysis">github</a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
