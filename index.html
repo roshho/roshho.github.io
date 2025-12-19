@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<!-- Todoo:
+		- Add icon to browser tab
+		- Make each section clickable and bring to the first link
+		- add resume drop down section to the bottom or short resume section
+		- Make sure it still looks good on half window
+	-->
     <!-- Header / About Section -->
     <section class="header" id="about">
         <div class="container">
@@ -44,7 +50,6 @@
     <section class="projects" id="projects">
         <div class="container">
             <h2>Projects</h2>
-			<!-- Pending insert paper & robotics class -->
 			<div class="project">
                 <div class="project-image">
                     <img src="imgs\hand-brace-glove.jpg" alt="Variations of hardware braces for stroke rehab">
@@ -57,6 +62,22 @@
 					</p>
                     <div class="project-links">
 						<a href="pdf\reglove-IEEE.pdf">paper (in-review)</a> 
+                    </div>
+                </div>
+            </div>
+
+			<div class="project">
+                <div class="project-image">
+                    <img src="imgs\JIF.png" alt="Diagram of JIF framework for robot learning from human demonstrations">
+                </div>
+                <div class="project-content">
+                    <h3> Train Robots in a JIF: Joint Inverse and Forward Dynamics with Human and Robot Demonstrations
+					</h3>
+					<p>
+						A dynamics-driven pre-training method that learns manipulation-relevant representations from multi-modal human demonstrations (vision and touch) without action labels. By jointly learning inverse and forward dynamics and fine-tuning with few robot demonstrations, it significantly improves data efficiency, generalization, and robustness in contact-rich manipulation tasks compared to prior visual pre-training methods
+					</p>
+                    <div class="project-links">
+						<a href="pdf\JIF.pdf">paper (in-review)</a> 
                     </div>
                 </div>
             </div>
