@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rosh Ho Portfolio">
     <title>Rosh Ho</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='50'%3E%F0%9F%91%BE%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,14 +22,14 @@
             <div class="profile-container">
                 <div class="profile-image">
                     <!-- Replace with your own profile photo -->
-                    <img src="imgs\Rosh-Ho.jpg" alt="Profile Photo">
+                    <img src="imgs\Rosh-Ho.jpg" alt="Profile Photo of Rosh Ho">
                 </div>
                 <div class="profile-info">
                     <h1>Rosh Ho</h1>
-                    <p class="title">Software Engineer/Roboticist</p>
+                    <p class="title">Software Engineer (AI/ML)</p>
                     <p class="affiliation">Columbia University</p>
                     <p class="bio">
-                        I'm a recent graduate student working on artificial intelligence, embedded systems and HCI. 
+                        I'm a CS student @ Columbia University student working on artificial intelligence, embedded systems and HCI. 
                         My current research focus is applying the latest works from academia onto assistive rehabilitative orthotics. </p>
 					<p class="contact-email">
 						Email: r.ho [at] columbia.edu
@@ -46,15 +48,150 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
+    <!-- Resume Section -->
+    <section class="resume collapsible-section" id="resume" data-expanded="true">
         <div class="container">
-            <h2>Projects</h2>
-			<div class="project">
+            <button class="section-header" type="button" aria-expanded="true">
+                <h2><i class="fas fa-briefcase"></i> Work</h2>
+                <span class="section-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="section-content">
+
+            <div class="resume-item" data-expanded="false">
+                <button class="resume-summary" type="button" aria-expanded="false">
+                    <div class="resume-summary-left">
+                        <h3>Davis Mechatronics</h3>
+                        <p class="job-title">AI/ML (Perception) Software Engineer</p>
+                    </div>
+                    <div class="resume-summary-right">
+                        <span class="date-range">Dec 2025 – Current</span>
+                        <span class="chevron" aria-hidden="true">▾</span>
+                    </div>
+                </button>
+                <div class="resume-details" hidden>
+                    <ul>
+                        <li>Improved picking accuracy by 23% by developing a custom computer-vision architecture with channel separation for RGB-D depth processing and expanding the training dataset</li>
+                        <li>Reduced labeling costs by $5,000 and accelerated turnaround time by developing a custom data-labeling wearable device</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resume-item" data-expanded="false">
+                <button class="resume-summary" type="button" aria-expanded="false">
+                    <div class="resume-summary-left">
+                        <h3>Columbia Business School</h3>
+                        <p class="job-title">Research Assistant</p>
+                    </div>
+                    <div class="resume-summary-right">
+                        <span class="date-range">Jul 2024 – May 2025</span>
+                        <span class="chevron" aria-hidden="true">▾</span>
+                    </div>
+                </button>
+                <div class="resume-details" hidden>
+                    <ul>
+                        <li>Built production NLP pipeline processing 500K+ campaign messages daily using Python, spaCy, and AWS Lambda</li>
+                        <li>Fine-tuned BERT models for political sentiment classification, achieving 15% accuracy improvement over baseline</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resume-item" data-expanded="false">
+                <button class="resume-summary" type="button" aria-expanded="false">
+                    <div class="resume-summary-left">
+                        <h3>Robotic Manipulation and Mobility Lab</h3>
+                        <p class="job-title">Robotics Research Assistant</p>
+                    </div>
+                    <div class="resume-summary-right">
+                        <span class="date-range">Feb 2024 – May 2025</span>
+                        <span class="chevron" aria-hidden="true">▾</span>
+                    </div>
+                </button>
+                <div class="resume-details" hidden>
+                    <ul>
+                        <li>Developed robotics control modules in C++ and Python within ROS/Linux environment to translate human grasping patterns into real-time autonomous manipulation routines</li>
+                        <li>Built modular data-collection systems that reduced preprocessing time by 40%, streamlining the mapping of human grasping patterns to robotic actuation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resume-item" data-expanded="false">
+                <button class="resume-summary" type="button" aria-expanded="false">
+                    <div class="resume-summary-left">
+                        <h3>LINE</h3>
+                        <p class="job-title">Backend Software Engineering Intern</p>
+                    </div>
+                    <div class="resume-summary-right">
+                        <span class="date-range">May 2024 – Sep 2024</span>
+                        <span class="chevron" aria-hidden="true">▾</span>
+                    </div>
+                </button>
+                <div class="resume-details" hidden>
+                    <ul>
+                        <li>Engineered high-performance backend for dynamic ad placement on streaming platforms using Go, AWS, and MySQL, reducing request latency by 23% in a latency-sensitive production environment</li>
+                        <li>Designed and implemented automated unit-testing pipeline in Go, improving API reliability and scalability for a system serving millions of daily requests</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resume-item" data-expanded="false">
+                <button class="resume-summary" type="button" aria-expanded="false">
+                    <div class="resume-summary-left">
+                        <h3>Blackstone</h3>
+                        <p class="job-title">Software Engineering Intern</p>
+                    </div>
+                    <div class="resume-summary-right">
+                        <span class="date-range">May 2023 – Aug 2023</span>
+                        <span class="chevron" aria-hidden="true">▾</span>
+                    </div>
+                </button>
+                <div class="resume-details" hidden>
+                    <ul>
+                        <li>Built a Python-based monitoring pipeline for simulated data center systems, applying AI-driven anomaly detection to sensor data (temperature, power, throughput)</li>
+                        <li>Deployed results to a Grafana dashboard with Prometheus and automated weekly reporting using Airflow, improving operational insights and reducing manual analysis</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="resume-item" data-expanded="false">
+                <button class="resume-summary" type="button" aria-expanded="false">
+                    <div class="resume-summary-left">
+                        <h3>Intel</h3>
+                        <p class="job-title">IoT Engineering Intern</p>
+                    </div>
+                    <div class="resume-summary-right">
+                        <span class="date-range">May 2022 – Sep 2022</span>
+                        <span class="chevron" aria-hidden="true">▾</span>
+                    </div>
+                </button>
+                <div class="resume-details" hidden>
+                    <ul>
+                        <li>Deployed IoT-enabled streetlights, driving energy savings and cost reductions</li>
+                        <li>Configured Intel hardware for Computex 2018 demos, showcasing advanced IoT solutions globally</li>
+                    </ul>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects collapsible-section" id="projects" data-expanded="true">
+        <div class="container">
+            <button class="section-header" type="button" aria-expanded="true">
+                <h2><i class="fas fa-diagram-project"></i> Projects</h2>
+                <span class="section-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="section-content">
+            <div class="project" data-link="pdf\reglove-IEEE.pdf">
                 <div class="project-image">
                     <img src="imgs\hand-brace-glove.jpg" alt="Variations of hardware braces for stroke rehab">
                 </div>
                 <div class="project-content">
+                    <div class="project-badges">
+                        <span class="badge badge-ai">AI</span>
+                        <span class="badge badge-robotics">Robotics</span>
+                    </div>
                     <h3> ReGlove: A Soft Pneumatic Glove for Activities of Daily Living Assistance via Wrist-Mounted Vision
 					</h3>
 					<p>
@@ -66,11 +203,15 @@
                 </div>
             </div>
 
-			<div class="project">
+            <div class="project" data-link="pdf\JIF.pdf">
                 <div class="project-image">
                     <img src="imgs\JIF.png" alt="Diagram of JIF framework for robot learning from human demonstrations">
                 </div>
                 <div class="project-content">
+                    <div class="project-badges">
+                        <span class="badge badge-ai">AI</span>
+                        <span class="badge badge-robotics">Robotics</span>
+                    </div>
                     <h3> Train Robots in a JIF: Joint Inverse and Forward Dynamics with Human and Robot Demonstrations
 					</h3>
 					<p>
@@ -82,11 +223,15 @@
                 </div>
             </div>
 
-			<div class="project">
+            <div class="project" data-link="pdf\grasp-mapping-CV.pdf">
 				<div class="project-image">
 					<img src="imgs\grasp-example.jpeg" alt="Robotic hand hovering above object with grasp identified">
 				</div>
 				<div class="project-content">
+					<div class="project-badges">
+						<span class="badge badge-ai">Vision</span>
+						<span class="badge badge-robotics">Robotics</span>
+					</div>
 					<h3>Achieving Dexterous Manipulation via Computer Vision for Stroke Patients</h3>
 					<p>
 						Improves stroke rehabilitation by enabling prosthetic and exoskeleton hands to automatically select appropriate grasps using vision. Combines RGB images with depth maps to recognize five daily-use grasp types, with results showing depth cues compensate for limitations in muscle signals.
@@ -98,11 +243,15 @@
 				</div>
 			</div>
 
-			<div class="project">
+            <div class="project" data-link="pdf\robotics-spot.pdf">
                 <div class="project-image">
                     <img src="imgs\robot-dog-schematics.png" alt="Robot dog schematics">
                 </div>
                 <div class="project-content">
+                    <div class="project-badges">
+                        <span class="badge badge-robotics">Robotics</span>
+                        <span class="badge badge-hardware">Hardware</span>
+                    </div>
                     <h3> Designing & Building Quadruped Robotic Systems
 					</h3>
 					<p>
@@ -114,11 +263,15 @@
                 </div>
             </div>
 
-			<div class="project">
+            <div class="project" data-link="pdf\ROAM-lab-memo.pdf">
                 <div class="project-image">
                     <img src="imgs\Screenshot 2025-12-12 005014.png" alt="Image of data collection setup with depth camera headmounted and glove for data collection">
                 </div>
                 <div class="project-content">
+                    <div class="project-badges">
+                        <span class="badge badge-robotics">Robotics</span>
+                        <span class="badge badge-hardware">Hardware</span>
+                    </div>
                     <h3> Sensor Array Development for Cross-Embodiment Pre-training
 					</h3>
                     <p>
@@ -130,11 +283,15 @@
                 </div>
             </div>
 
-			<div class="project">
+            <div class="project" data-link="pdf\davis-mecha.pdf">
                 <div class="project-image">
                     <img src="imgs\solar-installation.png" alt="Camera identifying insertion point of modular solar panel for insallation">
                 </div>
                 <div class="project-content">
+                    <div class="project-badges">
+                        <span class="badge badge-ai">AI</span>
+                        <span class="badge badge-vision">Vision</span>
+                    </div>
                     <h3> Lightweight Vision Model for Solar Pole Identification
 					</h3>
                     <p>
@@ -147,11 +304,15 @@
                 </div>
             </div>
 
-			<div class="project">
+            <div class="project" data-link="pdf\CULib.pdf">
                 <div class="project-image">
                     <img src="imgs\library-capacity.png" alt="Library Capacity Website Case Study">
                 </div>
                 <div class="project-content">
+                    <div class="project-badges">
+                        <span class="badge badge-web">Web</span>
+                        <span class="badge badge-ai">AI</span>
+                    </div>
                     <h3> Real-Time Library Occupancy Management System
 					</h3>
                     <p>
@@ -165,11 +326,15 @@
                 </div>
             </div>
 
-			<div class="project">
+            <div class="project" data-link="pdf\CBS\CBS-final-presentation.pdf">
 				<div class="project-image">
                     <img src="imgs\man-sitting-on-coins.png" alt="Miniature man sitting on coins">
                 </div>
                 <div class="project-content">
+                    <div class="project-badges">
+                        <span class="badge badge-ai">NLP</span>
+                        <span class="badge badge-data">Data Analysis</span>
+                    </div>
                     <h3>Political Marketing NLP Analysis</h3>
                     <p>
                         A Columbia Business School political marketing analysis project investigating how candidates signal bipartisanship and elite credentials supervised by Professor Mohamed Hussein. Features LLM-based tweet classification and campaign website scraping to understand impacts on voter perception. 
@@ -183,13 +348,115 @@
             </div>
 
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills collapsible-section" id="skills" data-expanded="true">
+        <div class="container">
+            <button class="section-header" type="button" aria-expanded="true">
+                <h2><i class="fas fa-toolbox"></i> Skills</h2>
+                <span class="section-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="section-content">
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-icons">
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="Python"><i class="fab fa-python"></i></span>
+                            <p class="skill-label">Python</p>
+                        </div>
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="C++"><i class="fab fa-cuttlefish"></i></span>
+                            <p class="skill-label">C++</p>
+                        </div>
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="Go"><i class="fab fa-golang"></i></span>
+                            <p class="skill-label">Go</p>
+                        </div>
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="SQL"><i class="fas fa-database"></i></span>
+                            <p class="skill-label">SQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Technologies</h3>
+                    <div class="skill-icons">
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="Linux"><i class="fab fa-linux"></i></span>
+                            <p class="skill-label">Linux</p>
+                        </div>
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="Git"><i class="fab fa-git-alt"></i></span>
+                            <p class="skill-label">Git</p>
+                        </div>
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="ROS"><i class="fas fa-cube"></i></span>
+                            <p class="skill-label">ROS</p>
+                        </div>
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="MySQL"><i class="fas fa-database"></i></span>
+                            <p class="skill-label">MySQL</p>
+                        </div>
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="AWS"><i class="fab fa-aws"></i></span>
+                            <p class="skill-label">AWS</p>
+                        </div>
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="Jupyter"><i class="fas fa-book"></i></span>
+                            <p class="skill-label">Jupyter</p>
+                        </div>
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="CAD"><i class="fas fa-drafting-compass"></i></span>
+                            <p class="skill-label">CAD</p>
+                        </div>
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="Fusion 360"><i class="fas fa-cube"></i></span>
+                            <p class="skill-label">Fusion 360</p>
+                        </div>
+                        <div class="skill-icon-wrapper">
+                            <span class="skill-icon" title="SCRUM"><i class="fas fa-tasks"></i></span>
+                            <p class="skill-label">SCRUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-star"></i> Specialties</h3>
+                    <p>Low-latency systems, algorithm optimization, automated testing, data analysis</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Let's Connect</h2>
+                <p>I'm always interested in working on innovative projects that bridge AI, robotics, and real-world impact. Feel free to reach out!</p>
+                <div class="contact-links-cta">
+                    <a href="mailto:r.ho@columbia.edu" class="cta-button cta-secondary">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/roshho/" target="_blank" class="cta-button cta-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://www.github.com/roshho" target="_blank" class="cta-button cta-secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2025 Rosh Ho.</p>
+            <p>© 2026 Rosh Ho.</p>
         </div>
     </footer>
 
