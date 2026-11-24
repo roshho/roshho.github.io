@@ -7,7 +7,7 @@ permalink: /python-prep/
 
 # Python syntax reference
 
-[rendered_pdf](/pdf/python_prep.pdf)
+[rendered_pdf](/attachments/pdf/python_prep.pdf)
 
 ```python
 import json
