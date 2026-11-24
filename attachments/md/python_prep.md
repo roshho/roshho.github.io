@@ -1,4 +1,13 @@
+---
+layout: reference
+title: Python prep
+description: A quick Python syntax reference for files, collections, heaps, and dates.
+permalink: /python-prep/
+---
+
 # Python syntax reference
+
+[rendered_pdf](/pdf/python_prep.pdf)
 
 ```python
 import json

@@ -1,0 +1,72 @@
+.reference-page {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.reference-page nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.reference-page a {
+    color: var(--accent-color);
+    text-underline-offset: 0.2em;
+}
+
+.reference-page h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+}
+
+.reference-page article > * + * {
+    margin-top: 1.25rem;
+}
+
+.reference-page article ul,
+.reference-page article ol {
+    padding-left: 1.5rem;
+}
+
+.reference-page pre {
+    overflow-x: auto;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    tab-size: 4;
+}
+
+.reference-page code {
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Rouge token colors for GitHub Pages' built-in syntax highlighting. */
+.highlight .c, .highlight .c1, .highlight .cm { color: #57606a; font-style: italic; }
+.highlight .k, .highlight .kn, .highlight .kc, .highlight .kd, .highlight .ow { color: #a12136; }
+.highlight .s, .highlight .s1, .highlight .s2 { color: #0a3069; }
+.highlight .mi, .highlight .mf, .highlight .nb { color: #0550ae; }
+.highlight .nf, .highlight .nc { color: #6639ba; }
+
+.reference-page a:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .reference-page { padding: 1.25rem 1rem; }
+    .reference-page pre { padding: 1rem; }
+}
+
+@media print {
+    .reference-page { max-width: none; padding: 0; }
+    .reference-page nav { display: none; }
+    .reference-page pre { white-space: pre-wrap; overflow-wrap: anywhere; box-shadow: none; }
+}
