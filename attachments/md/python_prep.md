@@ -3,6 +3,7 @@ layout: reference
 title: Python prep
 description: A quick Python syntax reference for files, collections, heaps, and dates.
 permalink: /python-prep/
+pdf: /attachments/pdf/python_prep.pdf
 ---
 
 # Python syntax reference
