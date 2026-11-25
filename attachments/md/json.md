@@ -19,8 +19,18 @@ permalink: /json-prep/
       "name": "Alice",
       "clinic": {"name": "North"},
       "visits": [
-        {"visit_id": "v1", "visit_date": "2026-01-05", "status": "completed", "charge_cents": 12000},
-        {"visit_id": "v2", "visit_date": "2026-01-12", "status": "canceled", "charge_cents": 0}
+        {
+          "visit_id": "v1",
+          "visit_date": "2026-01-05",
+          "status": "completed",
+          "charge_cents": 12000
+        },
+        {
+          "visit_id": "v2",
+          "visit_date": "2026-01-12",
+          "status": "canceled",
+          "charge_cents": 0
+        }
       ]
     },
     {
@@ -28,7 +38,12 @@ permalink: /json-prep/
       "name": "Ben",
       "clinic": {"name": "South"},
       "visits": [
-        {"visit_id": "v3", "visit_date": "2026-01-08", "status": "completed", "charge_cents": 8500}
+        {
+          "visit_id": "v3",
+          "visit_date": "2026-01-08",
+          "status": "completed",
+          "charge_cents": 8500
+        }
       ]
     },
     {"id": "p3", "name": "Cara", "clinic": {"name": "North"}}
@@ -45,7 +60,7 @@ with path.open(encoding="utf-8") as file:
     data = json.load(file)            # JSON file → dict
 
 text = json.dumps(data, indent=2)      # dict → JSON string
-copy = json.loads(text)                # JSON string → dict
+round_trip = json.loads(text)          # JSON string → dict
 # with open("output.json", "w", encoding="utf-8") as file:
 #     json.dump(data, file, indent=2)  # dict → JSON file
 ```
@@ -85,7 +100,7 @@ batch = PatientFile.model_validate(data)
 # From JSON text: batch = PatientFile.model_validate_json(text)
 # For one row: patient = Patient.model_validate(data["patients"][0])
 
-print(batch.patients[0].visits[0].visit_date)  # date(2026, 1, 5) as YYYY-MM-DD
+first_visit_date = batch.patients[0].visits[0].visit_date  # date(2026, 1, 5)
 records = [patient.model_dump(mode="json") for patient in batch.patients]
 ```
 
@@ -127,7 +142,8 @@ visits["visit_date"] = pd.to_datetime(visits["visit_date"])
 
 ```python
 completed = visits.loc[visits["status"].eq("completed")].sort_values("visit_date")
-print(completed[["patient_id", "visit_date", "charge_cents"]].to_string(index=False))
+columns = ["patient_id", "visit_date", "charge_cents"]
+print(completed[columns].to_string(index=False))
 
 by_clinic = completed.groupby("clinic", as_index=False).agg(
     visit_count=("visit_id", "size"),
